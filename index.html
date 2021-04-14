@@ -1,12 +1,32 @@
 <!DOCTYPE html>
   <html lang="es">
     <head>
-      <title> Mictlán </title>
+       <title>Alumno</title>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <link rel="shortcut icon" href="recursos/logo4.png" type="image/x-icon">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js">
+    </script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js">
+    </script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
 
     </head>
 
@@ -21,7 +41,7 @@
       <header>
           <nav>
 
-                <a href="index.html">Inicio</a>
+                <a href="alumno.html">Alumno</a>
                 <a href="mision.html">Misión-Visión</a>
                 <a href="productos.html">Productos</a>
                 <a href="contactos.html">Contactos</a>
@@ -37,119 +57,45 @@
           </section>
           <section class="textos-header">
 
-            <h1> MICTLAN ALITAS </h1>
-            <h2> Mictlantecuhtli te espera. </h2>
+            <h1> ALUMNOS </h1>
+           
           </section>
 
 
       <main>
-        <section class="contenedor quienes-somos">
-          <h2 class="titulo">¿Quienes somos?</h2>
-          <div class="contenedor-quienes-somos">
-            <img src="recursos/somos.jpg" alt="" class="imagen-about-us">
-            <div class="contenido-textos">
-              <h3><span>1</span> Los mejores productos. </h3>
-                <p> Dentro de la zona son lo mejor que hay para una comida, un antojo o una cena
-                    con nuestro menú toda la familia quedara mas que satisfecha, desde chicos hasta grandes
-                    pueden degustar nuestras delicias.</p>
-              <h3><span>2</span> La mejor calidad. </h3>
-                <p> Tenemos la mejor calidad en cuanto los ingredientes y podructos que manejamos, asi como
-                    altos niveles de limpieza y desinfeccion de los mismos, carne del dia, verdura fresca,
-                    aderezos refrigerados, harinas hechas en el momento, la mejor calidad para los mejores clientes.</p>
-            </div>
-          </div>
-        </section>
-        <section class="Menú">
-          <div class="contenedor">
-            <h2 class="titulo">Menú</h2>
-            <div class="galeria-menu">
-              <div class="imagen-menu">
-                  <img src="recursos/img1.jpg" alt="">
-                <div class="hover-galeria">
-                  <img src="recursos/icon.png" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-              </div>
-              <div class="imagen-menu">
-                  <img src="recursos/img2.jpg" alt="">
-                <div class="hover-galeria">
-                  <img src="recursos/icon.png" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-              </div>
-              <div class="imagen-menu">
-                  <img src="recursos/img3.jpg" alt="">
-                <div class="hover-galeria">
-                  <img src="recursos/icon.png" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-              </div>
-              <div class="imagen-menu">
-                  <img src="recursos/img4.jpg" alt="">
-                <div class="hover-galeria">
-                  <img src="recursos/icon.png" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-              </div>
-              <div class="imagen-menu">
-                  <img src="recursos/img5.jpg" alt="">
-                <div class="hover-galeria">
-                  <img src="recursos/icon.png" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-              </div>
-              <div class="imagen-menu">
-                  <img src="recursos/img6.jpg" alt="">
-                <div class="hover-galeria">
-                  <img src="recursos/icon.png" alt="">
-                    <p>Nuestro trabajo</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="clientes contenedor">
-                <h2>Nuestros clientes opinan</h2>
-                  <div class="cards">
-                  <div class="card">
-                      <img src="recursos/cl.jpg" alt="">
-                  <div class="contenido-texto-card">
-                          <h4>Adrian Musiño</h4>
-                            <p>Excelente servicio, son las mejores alitas que e probado.</p>
-                  </div>
-                  </div>
-                  <div class="card">
-                      <img src="recursos/cl1.jpg" alt="">
-                  <div class="contenido-texto-card">
-                          <h4>Luis Santoyo</h4>
-                            <p>Muy rica la comida, en especial la hamburguesa doble.</p>
-                  </div>
-              </section>
-
-        <section class="about-services">
-          <div class="contenedor">
-            <h2>Nuestros Servicios</h2>
-              <div class="servicio-cont">
-                <div class="servicio-ind">
-                  <img src="recursos/ilu.png" alt="">
-                    <h3>Calidad</h3>
-                  <p>La mejor calidad en todos tus alimentos.</p>
-                </div>
-                <div class="servicio-ind">
-                  <img src="recursos/ilu2.png" alt="">
-                    <h3>Rapidez</h3>
-                  <p>Todos tus alimentos saldran tan rapido que parecera que los acabna de sacar del horno.</p>
-                </div>
-                <div class="servicio-ind">
-                  <img src="recursos/ilu4.png" alt="">
-                    <h3>Deliciosidad</h3>
-                  <p>Todos tus alimentos son tan deliciosos que no evitaras chuparte los dedos.</p>
-                </div>
-              </div>
-          </div>
-        </section>
-      </main>
+       <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1>Alumno</h1>
+      <div class="herramientas">
+        <a href="alumnos.html">
+          Cancelar</a>
+        <button>Guardar</button>
+        <button name="eliminar"
+          type="button">
+          Eliminar
+        </button>
+      </div>
+    </header>
+    <p>
+      <label>
+        Matricula
+        <input name="matricula"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <input name="nombre"
+          type="text" required>
+      </label>
+    </p>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlAlumno.js">
+    </script>
 
       <footer>
         <div class="contenedor-footer">
