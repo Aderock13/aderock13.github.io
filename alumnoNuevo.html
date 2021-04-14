@@ -1,13 +1,32 @@
 <!DOCTYPE html>
   <html lang="es">
     <head>
-      <title> Mictlán Misión </title>
+      <title> ALUMNO NUEVO </title>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
       <link rel="shortcut icon" href="recursos/logo4.png" type="image/x-icon">
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
+      <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,
+       initial-scale=1.0">
+ 
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+  <script
+    src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+  <script src="js/init.js">
+  </script>
+  <script type="module"
+    src="cmp/mi-nav.js">
+    </script>
+  <script type="module"
+    src="cmp/mi-footer.js">
+    </script>
     </head>
 
     <body>
@@ -21,8 +40,8 @@
       <header>
           <nav>
 
-                <a href="index.html">Inicio</a>
-                <a href="mision.html">Misión-Visión</a>
+                <a href="alumno.html">Inicio</a>
+                <a href="alumnoNuevo.html">Misión-Visión</a>
                 <a href="productos.html">Productos</a>
                 <a href="contactos.html">Contactos</a>
                 <a href="sesion.html">Iniciar Sesión</a>
@@ -35,8 +54,8 @@
           </left>
           </section>
           <section class="textos-header">
-            <h1> MICTLAN ALITAS </h1>
-            <h2> Mictlantecuhtli te espera. </h2>
+            <h1>ALUMNO NUEVO </h1>
+          
           </section>
 
 
@@ -45,36 +64,38 @@
 
 
         <section class="contenedor quienes-somos">
-          <h2 class="titulo">Misión</h2>
-          <div class="contenedor-quienes-somos">
-            <img src="recursos/mis.png" alt="" class="imagen-about-us">
-            <div class="contenido-textos">
-              <h3><span></span> NUESTRA MISIÓN </h3>
-                <p> Somos un negocio de comida rápida donde tenemos como misión ofrecer buenos productos
-                    con excelente sabor a precios muy accesibles, queremos ayudar a personas locales
-                    desempleadas con un empleo. <br><br>
-                    Los principios de nuestro negocio son:
-                    Buscar siempre entregar al consumidor la mayor calidad posible en cada compra, también
-                    buscamos ofrecer un servicio mejor y mas limpio y precios competitivos.
-            </div>
-          </div>
-        </section>
-
-
-        <section class="contenedor quienes-somos">
-          <h2 class="titulo">Visión</h2>
-          <div class="contenedor-quienes-somos">
-            <img src="recursos/vis.jpg" alt="" class="imagen-about-us">
-            <div class="contenido-textos">
-              <h3><span></span> NUESTRA VISIÓN </h3>
-                <p> La imagen que queremos tener del negocio es ofrecer un gran servicio, a bajos precios con
-                    ingredientes de calidad, porque a pesar de que hay muchos negocios similares sabemos que
-                    lo que estamos ofreciendo es mejor que la competencia. <br><br>
-                    En un futuro vemos nuestros productos como los mejores de la zona y ser mas reconocidos
-                    con mucho esfuerzo y apoyando mas gente cuando se genere más empleo.
-
-            </div>
-          </div>
+         <form name="forma">
+    <mi-nav></mi-nav>
+    <header>
+      <h1>Alumno Nuevo</h1>
+      <div class="herramientas">
+        <a
+          href="alumnos.html">
+          Cancelar</a>
+        <button type="submit">
+          Guardar
+        </button>
+      </div>
+    </header>
+    <p>
+      <label>
+        Matricula
+        <input name="matricula"
+          type="text" required>
+      </label>
+    </p>
+    <p>
+      <label>
+        Nombre
+        <input name="nombre"
+          type="text" required>
+      </label>
+    </p>
+    <mi-footer></mi-footer>
+  </form>
+  <script type="module"
+    src="js/CtrlAlumnoNuevo.js">
+    </script>
         </section>
 
 
